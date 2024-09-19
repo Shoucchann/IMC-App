@@ -1,4 +1,4 @@
-package br.com.aula.teste;
+package br.com.aula.text;
 
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -14,8 +14,6 @@ import androidx.core.view.WindowInsetsCompat;
 import com.google.android.material.textfield.TextInputEditText;
 
 import java.text.DecimalFormat;
-
-import br.com.aula.teste.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -77,9 +75,9 @@ public class MainActivity extends AppCompatActivity {
             resultado1.setText(imc);
         }
 
-        // Verificando a classificação do peso
+       // Verificando a classificação do peso
 
-        if(numImc < 18.5) {
+       if(numImc < 18.5) {
             resultado2.setText("Baixo Peso");
         } else if(numImc >= 18.5 && numImc <= 24.9 ){
             resultado2.setText("Peso Normal");
