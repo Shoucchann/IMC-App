@@ -3,7 +3,7 @@
 <h2>FECAP - Ciência da Computação - 2024/2</h2>
 <p><strong>Programação de Dispositivos Móveis - Prof. Vinicius Heltai</strong></p>
 
-<h3>Calculadora de IMC - NI 1</h3>
+<h3>Primeiro Projeto - NI 1</h3>
 <p align="center">
   <img src="assets/imagem_app.png" alt="Imagem do app" width="300">
 </p>
