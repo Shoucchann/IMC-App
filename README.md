@@ -3,14 +3,17 @@
 <h2>FECAP - Ciência da Computação - 2024/2</h2>
 <p><strong>Programação de Dispositivos Móveis - Prof. Vinicius Heltai</strong></p>
 
-<h3>Primeiro Projeto - NI 1</h3>
+<h3>Calculadora de IMC - NI 1</h3>
+<p align="center">
+  <img src="assets/imagem_app.png" alt="Imagem do app" width="300">
+</p>
 
 <hr>
 
 <h2>Integrantes do Grupo</h2>
 <ul>
   <li><strong>Jenifer Barreto</strong> - Matrícula: 23025664</li>
-  <li><strong>Maria Eduarda Lopes</strong> - Matrícula: 23025447</li>
+  <li><strong>Maria Eduarda de Freitas Lopes</strong> - Matrícula: 23025447</li>
   <li><strong>Sabrinna Vicente</strong> - Matrícula: 23025550</li>
   <li><strong>Beatriz de Souza</strong> - Matrícula: 23025365</li>
 </ul>
