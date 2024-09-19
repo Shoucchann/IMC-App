@@ -33,9 +33,6 @@
       <li>Abaixo do Peso</li>
       <li>Peso Normal</li>
       <li>Sobrepeso</li>
-      <li>Obesidade Grau I</li>
-      <li>Obesidade Grau II</li>
-      <li>Obesidade Grau III</li>
     </ul>
   </li>
   <li><strong>Tela de Resultado</strong>: Cada classificação de IMC é exibida em uma nova tela (Activity), com orientações específicas para o usuário, incluindo dicas de saúde e informações adicionais.</li>
