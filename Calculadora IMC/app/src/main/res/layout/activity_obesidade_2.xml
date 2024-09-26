@@ -5,51 +5,74 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity7">
+    tools:context=".ObesidadeII">
 
     <TextView
         android:id="@+id/textoTituloResultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="IMC"
+        android:fontFamily="@font/abril_fatface"
+        android:textAllCaps="false"
+        android:textColor="#3855A2"
         android:textSize="40sp"
         android:textStyle="bold"
+        android:text="IMC"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.50"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.205" />
+        app:layout_constraintVertical_bias="0.10" />
 
     <TextView
         android:id="@+id/textResultado1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/abril_fatface"
         android:text=""
         android:textSize="35sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.50"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textoTituloResultado"
-        app:layout_constraintVertical_bias="0.356" />
+        app:layout_constraintVertical_bias="0.10" />
 
     <TextView
         android:id="@+id/textResultado2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/alata"
         android:text=""
         android:textSize="35sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textResultado1" />
+        app:layout_constraintTop_toBottomOf="@+id/textResultado1"
+        app:layout_constraintVertical_bias="0.059" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="Quando o IMC está entre 35 e 39,9, você está na chamada obesidade grau II. O risco de problemas como diabetes tipo 2 e apneia do sono é bem maior. É fundamental buscar orientação médica e fazer mudanças sustentáveis na alimentação e nos hábitos."
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65" />
+
 
     <Button
         android:id="@+id/btnVoltar"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="50sp"
         android:backgroundTint="@color/green"
@@ -59,9 +82,9 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintHorizontal_bias="0.50"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textResultado2"
-        app:layout_constraintVertical_bias="0.963" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.90" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

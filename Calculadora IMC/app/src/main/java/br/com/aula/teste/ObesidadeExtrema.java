@@ -10,7 +10,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivity2 extends AppCompatActivity {
+public class ObesidadeExtrema extends AppCompatActivity {
 
     private TextView textResultado1, textResultado2;
     private Button btnVoltar;
@@ -19,8 +19,9 @@ public class MainActivity2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_obesidade_extrema);
 
+        // Recupera os valores passados pela Intent
         // Recupera os valores passados pela Intent
         String resultado1 = getIntent().getStringExtra("resultado1");
         String resultado2 = getIntent().getStringExtra("resultado2");
@@ -32,7 +33,7 @@ public class MainActivity2 extends AppCompatActivity {
         textResultado1.setText(resultado1);
         textResultado2.setText(resultado2);
 
-        // Fechar Activity2
+        // Fechar Activity7
         btnVoltar = findViewById(R.id.btnVoltar);
         btnVoltar.setOnClickListener(view ->{
             finish();

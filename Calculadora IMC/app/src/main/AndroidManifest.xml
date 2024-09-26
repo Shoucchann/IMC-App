@@ -22,22 +22,22 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity7"
+            android:name=".ObesidadeExtrema"
             android:exported="false" />
         <activity
-            android:name=".MainActivity6"
+            android:name=".ObesidadeII"
             android:exported="false" />
         <activity
-            android:name=".MainActivity5"
+            android:name=".ObesidadeI"
             android:exported="false" />
         <activity
-            android:name=".MainActivity4"
+            android:name=".Sobrepeso"
             android:exported="false" />
         <activity
-            android:name=".MainActivity3"
+            android:name=".PesoNormal"
             android:exported="false" />
         <activity
-            android:name=".MainActivity2"
+            android:name=".BaixoPeso"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

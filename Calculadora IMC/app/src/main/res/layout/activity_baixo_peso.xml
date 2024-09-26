@@ -5,51 +5,82 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity5">
+    tools:context=".BaixoPeso">
+
+    <!-- TITULO IMC -->
 
     <TextView
         android:id="@+id/textoTituloResultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="IMC"
+        android:fontFamily="@font/abril_fatface"
+        android:textAllCaps="false"
+        android:textColor="#3855A2"
         android:textSize="40sp"
         android:textStyle="bold"
+        android:text="IMC"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.50"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.205" />
+        app:layout_constraintVertical_bias="0.10" />
 
+
+    <!-- RESULTADO NUMÉRICO -->
     <TextView
         android:id="@+id/textResultado1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/abril_fatface"
         android:text=""
         android:textSize="35sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.50"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textoTituloResultado"
-        app:layout_constraintVertical_bias="0.356" />
+        app:layout_constraintVertical_bias="0.10" />
 
+    <!-- CATEGORIA -->
     <TextView
         android:id="@+id/textResultado2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/alata"
         android:text=""
         android:textSize="35sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textResultado1" />
+        app:layout_constraintTop_toBottomOf="@+id/textResultado1"
+        app:layout_constraintVertical_bias="0.059" />
 
+    <!-- TEXTO EXPLICATIVO -->
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="Se você está com o IMC abaixo de 18,5, isso pode ser um sinal de que está com carência nutricional e corre riscos relacionados à desnutrição. Nesse caso, é super importante procurar um médico ou nutricionista para entender a causa e ganhar peso de forma saudável."
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65" />
+
+
+    <!-- BOTÃO VOLTAR -->
     <Button
         android:id="@+id/btnVoltar"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="50sp"
         android:backgroundTint="@color/green"
@@ -59,9 +90,9 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintHorizontal_bias="0.50"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textResultado2"
-        app:layout_constraintVertical_bias="0.963" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.90" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

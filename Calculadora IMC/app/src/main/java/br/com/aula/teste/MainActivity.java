@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_calculadora);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
             // Verificando a classificação do peso
             if(numImc < 18.5) {
                 //Chama tela 2
-                Intent intent = new Intent(this, MainActivity2.class);
+                Intent intent = new Intent(this, BaixoPeso.class);
 
                 // Definição de variável e receber o conteúdo para serem transferidos
                 intent.putExtra("resultado1", imc);
@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
 
             } else if(numImc >= 18.5 && numImc <= 24.9 ){
                 // chama tela 3
-                Intent intent = new Intent(this, MainActivity3.class);
+                Intent intent = new Intent(this, PesoNormal.class);
 
                 // Definição de variável e receber o conteúdo para serem transferidos
                 intent.putExtra("resultado1", imc);
@@ -104,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             } else if(numImc>=25 && numImc<=29.9){
                 //Chama tela 4
-                Intent intent = new Intent(this, MainActivity4.class);
+                Intent intent = new Intent(this, Sobrepeso.class);
 
                 // Definição de variável e receber o conteúdo para serem transferidos
                 intent.putExtra("resultado1", imc);
@@ -113,7 +113,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             } else if(numImc>30 && numImc<=34.9){
                 //Chamar tela 5
-                Intent intent = new Intent(this, MainActivity5.class);
+                Intent intent = new Intent(this, ObesidadeI.class);
 
                 // Definição de variável e receber o conteúdo para serem transferidos
                 intent.putExtra("resultado1", imc);
@@ -124,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
             } else if(numImc>35 && numImc<=39.9){
                 //Chamar tela 6
 
-                Intent intent = new Intent(this, MainActivity6.class);
+                Intent intent = new Intent(this, ObesidadeII.class);
 
                 // Definição de variável e receber o conteúdo para serem transferidos
                 intent.putExtra("resultado1", imc);
@@ -134,7 +134,7 @@ public class MainActivity extends AppCompatActivity {
 
             }else if(numImc>40){
                 //Chamar tela 7
-                Intent intent = new Intent(this, MainActivity7.class);
+                Intent intent = new Intent(this, ObesidadeExtrema.class);
 
                 // Definição de variável e receber o conteúdo para serem transferidos
                 intent.putExtra("resultado1", imc);
